@@ -1,0 +1,39 @@
+.navbar {
+  background: #4D4C4B;
+  height: 136px; 
+  display: flex;
+}
+
+.web-logo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.cobra-name {
+  font-family: 'VT323', monospace;
+  font-size: 42px;
+  margin-left: 2rem;
+}
+
+.logo-codebra {
+  width: 99px;
+  min-width: 99px;
+}
+
+.link-list {
+  list-style: none;
+  display: none;
+}
+.link-item > a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.CTA-link {
+  padding: 10px;
+  background-color: #21c389;
+  border-radius: 20px;
+}

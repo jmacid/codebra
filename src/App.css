@@ -5,8 +5,9 @@
 }
 
 body {
+  --primaryColor: #21c389;
   background: #333;
-  color: #21c389;
+  color: var(--primaryColor);
   margin: 0;
   font-family: 'Cairo', sans-serif;
   line-height: 2.5rem;

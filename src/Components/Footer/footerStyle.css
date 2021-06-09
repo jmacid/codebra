@@ -1,0 +1,29 @@
+.footerContainer {
+  background: #4D4C4B;
+  margin-top: 2rem;
+}
+.footerWrapper{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialTitle {
+  font-size: 24px;
+}
+
+.linkTree {
+  list-style: none;
+}
+
+.socialItem {
+}
+
+.socialItem > a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 18px;
+}

@@ -1,0 +1,51 @@
+.mainSection {
+  /* margin-top: 50px; */
+  padding: 25px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-info h1 {
+  max-width: 80%;
+  font-size: 36px;
+  margin: auto;
+}
+
+.main-info p {
+  max-width: 80%;
+  font-size: 22px;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.main-img {
+  display: none;
+  /* width: 35%; */
+}
+
+.snakeImg {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.CTA-main {
+  display: block;
+  font-size: 22px;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+  background-color: var(--primaryColor);
+  border-radius: 20px;
+  width: 80%;
+  max-width: 400px;
+  min-width: 200px;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+/* TUVXGBRmusQW36P9CDwhLRNjJAMnYRMD9W */

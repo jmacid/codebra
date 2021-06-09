@@ -1,0 +1,16 @@
+.aboutSection{
+  text-align: center;
+}
+
+.aboutTitle {
+  text-align: center;
+  color: var(--primaryColor);  
+  font-size: 32px;
+}
+
+.aboutp {
+  max-width: 80%;
+  font-size: 22px;
+  margin: auto;
+  margin-top: 1rem;
+}

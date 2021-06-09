@@ -1,0 +1,31 @@
+.StatisticsSection {
+  
+}
+
+.statisticsTitle {
+  text-align: center;
+  color: var(--primaryColor);  
+  font-size: 32px;
+}
+
+.statisticsTable {
+  border: 1px solid var(--primaryColor);
+  border-spacing: 0px;
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+  min-width: 200px;
+}
+
+.statisticsTable th {
+  border: 1px var(--primaryColor) solid;
+  padding: 10px;
+  font-size: 22px;
+}
+
+.statisticsTable td {
+  border: 1px var(--primaryColor) solid;
+  padding: 10px;
+  font-size: 22px;
+}
