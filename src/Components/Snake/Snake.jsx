@@ -1,26 +1,20 @@
 import React, { useEffect } from 'react'
-import SnakeGame from './snakeGame';
-import NippleJoystick from '../NippleJoystick/NippleJoystick'
+import {startGame} from './snakeGame';
 
 const Snake = () => {
   
+  let canvasHeight = window.innerHeight*0.6 - window.innerHeight*0.6 % 20;
+  let canvasWidth = window.innerWidth - window.innerWidth % 20 - 40;
+
   useEffect(() => {
     
-    const snakeGame = new SnakeGame('snake-canvas');
-    snakeGame.start();
+    startGame();    
     
   }, []);
   
-  const clickMe = () => {
-    
-    document.dispatchEvent(new KeyboardEvent('keydown',{'key':'ArrowUp'}));
-  }
-  
   return (
     <div>
-      <canvas id="snake-canvas" width="500px" height="500px"></canvas>
-      <button id='joystick' onClick={clickMe}>Hola</button>
-      <NippleJoystick />
+      <canvas id='snake-canvas' width={canvasWidth} height={canvasHeight}></canvas>
     </div>
   )
 }

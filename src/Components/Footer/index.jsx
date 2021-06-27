@@ -45,8 +45,8 @@ function Footer() {
         <div className="socialNetworks">
           <h2 className="socialTitle">Redes Sociales</h2>
           <ul className="linkTree">
-            <li className="socialItem"><a href="https://github.com/jmacid/codebra" target="_blank" className="socialLink"><FaGithub /> GitHub</a></li>
-            <li className="socialItem"><a href="https://www.linkedin.com/in/jmnazarian" target="_blank" className="socialLink"><FaLinkedin/> Linkedin</a></li>
+            <li className="socialItem"><a href="https://github.com/jmacid/codebra" target="_blank" rel="noreferrer" className="socialLink"><FaGithub /> GitHub</a></li>
+            <li className="socialItem"><a href="https://www.linkedin.com/in/jmnazarian" target="_blank" rel="noreferrer" className="socialLink"><FaLinkedin/> Linkedin</a></li>
           </ul>
         </div>
       </div>
