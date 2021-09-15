@@ -13,13 +13,13 @@ const NippleJoystick = (props) => {
     const options = {
       zone: document.getElementById('zone_joystick'),
       mode: 'static', 
-      position: { top: '89%', left: '70%' },
+      position: { top: '92%', left: '30%' },
       threshold: 0.5
     };
     
     let manager = nipplejs.create(options); 
       
-    manager.on('move', (evt, nipple) => {
+    manager.on('move', (_evt, nipple) => {
       let joystickDirection;
 
       switch(nipple.direction?.angle) {
@@ -35,6 +35,8 @@ const NippleJoystick = (props) => {
         case 'down':
           joystickDirection = 'ArrowDown';
             break;
+        default:
+          console.error('Case not considered: ', nipple.direction?.angle);
       }
       
       window.dispatchEvent(new KeyboardEvent('keydown',{'key': joystickDirection}));
