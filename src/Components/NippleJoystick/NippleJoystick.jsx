@@ -13,7 +13,7 @@ const NippleJoystick = (props) => {
     const options = {
       zone: document.getElementById('zone_joystick'),
       mode: 'static', 
-      position: { top: '92%', left: '30%' },
+      position: { top: '92%', left: '65%' },
       threshold: 0.5
     };
     
