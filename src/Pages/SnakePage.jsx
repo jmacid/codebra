@@ -47,6 +47,26 @@ const SnakePage = () => {
     if(onGame === false) {
       setShowModalEndGame(true);
     }
+
+    
+    if( onGame === false) {
+      
+      // Read local-storage variables
+      let { highestScore = 0, gamesPlayed = 0, highestLevel = 0 } = JSON.parse(localStorage.getItem('playerStats')) || {};
+      console.log('Read')
+      console.log({highestScore, gamesPlayed, highestLevel});
+
+      // Update local-storage variables
+      gamesPlayed += 1;
+      if( scoreGame > highestScore) highestScore = scoreGame;
+      if( levelGame > highestLevel) highestLevel = levelGame;
+  
+      // Write local-storage variables
+      localStorage.setItem('playerStats', JSON.stringify({highestScore, gamesPlayed, highestLevel}));
+  
+    }
+    
+    
   }, [onGame]);
 
   useEffect( ()=> {
@@ -80,7 +100,7 @@ const SnakePage = () => {
         showModalEndGame &&
         <Modal
           headerTitle ={'¡Bien hecho!'}
-          contentText = { `Haz alcanzado ${scoreGame} puntos.\n Tu puntuación mas alta es ${75}.` }
+          contentText = { `Haz alcanzado ${scoreGame} puntos.\n Felicidades!!` }
           buttonPrimary= { 'Volver a Jugar' }
           onClickPrimary= { () => { 
             setShowModalEndGame(false);

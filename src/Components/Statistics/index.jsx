@@ -2,12 +2,7 @@ import { useState } from 'react';
 
 import './StatisticsStyle.css';
 
-function Statistics() {
-  
-  const [gamesPlayed, setGamesPlayed] = useState(15);
-  const [higherScore, setHigherScore] = useState(85);
-  const [higherLevel, setHigherLevel] = useState(6);
-  
+function Statistics( {highestScore, gamesPlayed, highestLevel} ) {
   
   return (
     <section className="StatisticsSection">
@@ -24,13 +19,13 @@ function Statistics() {
         <tbody>
           <tr>
             <th>Puntuación mas alta</th>
-            <td>{ higherScore }</td>
+            <td>{ highestScore }</td>
           </tr>
         </tbody>
         <tbody>
           <tr>
             <th>Nivel mas alto</th>
-            <td>{ higherLevel }</td>
+            <td>{ highestLevel }</td>
           </tr>
         </tbody>
       </table>
