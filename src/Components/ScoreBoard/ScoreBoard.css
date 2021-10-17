@@ -1,0 +1,13 @@
+.scoreboard-container{
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: var(--max-width-game, 500px);
+}
+
+.level-info,
+.score-info {
+  margin: auto;
+}
+
