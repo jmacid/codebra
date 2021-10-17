@@ -49,4 +49,7 @@
   margin-top: 1rem;
 }
 
-/* TUVXGBRmusQW36P9CDwhLRNjJAMnYRMD9W */
+.CTA-main:hover,
+.CTA-main:focus {
+  background-color: #24ce92;
+}

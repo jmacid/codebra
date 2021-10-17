@@ -30,3 +30,19 @@
   padding: 10px;
   font-size: 22px;
 }
+
+.statisticsPrimaryButton {
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: 2px solid var(--primaryColor);
+  border-radius: 10px;
+  background-color: var(--background-color);
+  color: var(--primaryColor);;
+}
+
+.statisticsPrimaryButton:hover,
+.statisticsPrimaryButton:focus {
+  background-color: #444;
+}
