@@ -24,7 +24,7 @@ let snakePlayer = { }
 let bugs = [];
 
 let lastTimestap = 0;
-let updateRate = [100, 75, 70, 65, 60, 55, 50, 45, 45, 43];
+let updateRate = [90, 85, 75, 70, 65, 60, 65, 50, 45, 43];
 
 
 function clearCanvas() {
