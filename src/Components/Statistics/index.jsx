@@ -1,9 +1,6 @@
-import { useState } from 'react';
-
 import './StatisticsStyle.css';
 
 function Statistics( {highestScore, gamesPlayed, highestLevel} ) {
-  
   return (
     <section className="StatisticsSection">
       
@@ -30,7 +27,7 @@ function Statistics( {highestScore, gamesPlayed, highestLevel} ) {
         </tbody>
       </table>
     </section>
-  )
+  );
 }
 
 export default Statistics;

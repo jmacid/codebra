@@ -1,5 +1,3 @@
-import React, { useEffect } from 'react'
-
 const Snake = () => {
   
   let canvasHeight = window.innerHeight*0.6 - window.innerHeight*0.6 % 20;

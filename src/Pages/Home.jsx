@@ -20,9 +20,9 @@ const Home = () => {
       <Header />
       <PlaySnakeGame />
       <Statistics
-        highestScore= {highestScore}
-        gamesPlayed = {gamesPlayed}
-        highestLevel = {highestLevel}
+        highestScore={highestScore}
+        gamesPlayed={gamesPlayed}
+        highestLevel={highestLevel}
       />
       <About />
       <Footer />
