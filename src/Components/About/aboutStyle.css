@@ -1,4 +1,6 @@
 .aboutSection{
+  margin: auto;
+  max-width: var(--max-width-main, 500px);
   text-align: center;
 }
 

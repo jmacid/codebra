@@ -6,14 +6,19 @@
 
 body {
   --primaryColor: #21c389;
+  --max-width-main: 800px;
+  --max-width-game: 500px;
   background: #333;
-  color: var(--primaryColor);
+  color: var(--primaryColor, #21c389);
   margin: 0;
   font-family: 'Cairo', sans-serif;
   line-height: 2.5rem;
+  
 }
 
 #snake-canvas {
-  background: #fff;
+  background: #eee;
   border: 20px solid #000;
+  display: block;
+  margin: auto;
 }

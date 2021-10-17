@@ -1,12 +1,11 @@
 import './ScoreBoard.css';
 
 
-const ScoreBoard = (props) => {
-  const {score, level} = props;
+const ScoreBoard = ({score, level}) => {
   return (
     <div className="scoreboard-container">
-      <h2 className="level-info">Level {level}</h2>
-      <h2 className="score-info">Score {score}</h2>
+      <h2 className="level-info">Nivel {level}</h2>
+      <h2 className="score-info">Puntaje {score}</h2>
     </div>
   );
 };

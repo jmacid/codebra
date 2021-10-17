@@ -14,7 +14,8 @@ const NippleJoystick = (props) => {
       zone: document.getElementById('zone_joystick'),
       mode: 'static', 
       position: { top: '92%', left: '65%' },
-      threshold: 0.5
+      threshold: 0.5,
+      size: 75
     };
     
     let manager = nipplejs.create(options); 

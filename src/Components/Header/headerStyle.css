@@ -1,12 +1,11 @@
 .navbar {
   background: #4D4C4B;
-  height: 136px; 
+  max-height: 136px;
   display: flex;
 }
 
 .web-logo {
   display: flex;
-  width: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -17,9 +16,19 @@
   margin-left: 2rem;
 }
 
+.web-logo-link,
+.web-logo-link:visited {
+  display: block;
+  margin: auto;
+  color: #21c389;
+  text-decoration: none;
+}
+
 .logo-codebra {
   width: 99px;
   min-width: 99px;
+  display: block;
+  margin: auto;
 }
 
 .link-list {

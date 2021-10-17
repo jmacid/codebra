@@ -4,6 +4,7 @@ import NippleJoystick from '../Components/NippleJoystick/NippleJoystick';
 import Snake from '../Components/Snake/Snake';
 import Header from '../Components/Header';
 import Modal from '../Components/Modal';
+import ScoreBoard from '../Components/ScoreBoard';
 import {startGame} from '../game/snakeGame';
 
 
@@ -77,10 +78,9 @@ const SnakePage = () => {
   return (
     <div>
       <Header />
+      <ScoreBoard score={scoreGame} level={levelGame}/>
       <Snake />
       <NippleJoystick />
-      <p>Score: {scoreGame} Level: {levelGame}</p>
-      
       
       {
         showModalWelcome && 

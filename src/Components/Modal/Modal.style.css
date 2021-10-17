@@ -5,15 +5,19 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);  
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
   text-align: center;
+  --modal-primary: var(#089868, #21c389);
+  --modal-secondary: var(#fff);
+  --modal-hoover: var(#21c389);
 }
 
 .modalContainer {
+  max-width: var(--max-width-game, 500px);
   background-color: #4D4C4B;
   border: 10px solid #F15249;
   border-radius: 10px;
@@ -66,26 +70,26 @@
 }
 
 .footerButtonPrimary {
-  background-color: #089868;
-  color: #fff;
+  background-color: var(--modal-primary, #089868);
+  color: var(--modal-secondary, #fff);
 }
 
 .footerButtonPrimary:hover,
 .footerButtonPrimary:focus {
-  background-color: #fff;
-  color: #089868;
-  border: 1px solid #089868;
+  background-color: var(--modal-hoover);
+  color: var(--modal-secondary, #fff);
+  border: 1px solid var(--modal-primary, #089868);
 }
 
 .footerButtonSecondary {
   background-color: #fff;
-  color: #089868;
-  border: 1px solid #089868;
+  color: var(--modal-primary, #089868);
+  border: 1px solid var(--modal-primary, #089868);
 }
 
 .footerButtonSecondary:hover,
 .footerButtonSecondary:focus {
-  background-color: #089868;
-  color: #fff;
+  color: var(--modal-secondary, #fff);
+  background-color: var(--modal-hoover)
 }
 

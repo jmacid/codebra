@@ -1,5 +1,6 @@
 .mainSection {
-  /* margin-top: 50px; */
+  margin: auto;
+  max-width: var(--max-width-main, 500px);
   padding: 25px;
 }
 
